@@ -28,6 +28,7 @@
 		045D3F9B24DBB6AF00F18D76 /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045D3F9A24DBB6AF00F18D76 /* GFAvatarImageView.swift */; };
 		04F2D8C224DC6C83005F5176 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2D8C124DC6C83005F5176 /* UIHelper.swift */; };
 		04F2D8CA24DCCF3B005F5176 /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2D8C924DCCF3B005F5176 /* GFEmptyStateView.swift */; };
+		04F2D8CC24DD02B0005F5176 /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F2D8CB24DD02B0005F5176 /* UserInfoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		045D3F9A24DBB6AF00F18D76 /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
 		04F2D8C124DC6C83005F5176 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		04F2D8C924DCCF3B005F5176 /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
+		04F2D8CB24DD02B0005F5176 /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				045D3F7E24DB1DF400F18D76 /* FollowerListVC.swift */,
 				045D3F7624DB0F4B00F18D76 /* SearchVC.swift */,
 				045D3F7824DB0F6D00F18D76 /* FavoritesListVC.swift */,
+				04F2D8CB24DD02B0005F5176 /* UserInfoVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				045D3F6324DB014500F18D76 /* AppDelegate.swift in Sources */,
 				045D3F6524DB014500F18D76 /* SceneDelegate.swift in Sources */,
 				045D3F8624DB227B00F18D76 /* GFBodyLabel.swift in Sources */,
+				04F2D8CC24DD02B0005F5176 /* UserInfoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
