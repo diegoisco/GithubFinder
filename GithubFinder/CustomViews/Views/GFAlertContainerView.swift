@@ -1,16 +1,14 @@
 //
-//  GFAvatarImageView.swift
+//  GFAlertContainerView.swift
 //  GithubFinder
 //
-//  Created by Diego Oruna on 5/08/20.
+//  Created by Diego Oruna on 9/08/20.
 //
 
 import UIKit
 
-class GFAvatarImageView: UIImageView {
-    
-    let cache = NetworkManager.shared.cache
-    
+class GFAlertContainerView: UIView {
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
@@ -21,9 +19,10 @@ class GFAvatarImageView: UIImageView {
     }
     
     private func configure(){
-        layer.cornerRadius = 10
-        clipsToBounds = true
-        image = #imageLiteral(resourceName: "empty-state-logo")
+        backgroundColor       = .systemBackground
+        layer.cornerRadius    = 16
+        layer.borderWidth     = 2
+        layer.borderColor     = UIColor.white.cgColor
         translatesAutoresizingMaskIntoConstraints = false
     }
     

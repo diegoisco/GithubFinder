@@ -96,4 +96,43 @@ class NetworkManager {
         
     }
     
+    func downloadImage(from urlString:String, completed: @escaping (UIImage?) -> ()){
+        
+        let cachedKey = NSString(string: urlString)
+//        self.image = #imageLiteral(resourceName: "empty-state-logo")
+        
+        if let image = cache.object(forKey: cachedKey){
+//            self.image = image
+            completed(image)
+            return
+        }
+        
+        guard let url = URL(string: urlString) else {
+            completed(nil)
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: url) { [weak self] (data, res, err) in
+            
+            guard let self = self,
+                  err == nil,
+                  let res = res as? HTTPURLResponse, res.statusCode == 200,
+                  let data = data,
+                  let image = UIImage(data: data) else{
+                completed(nil)
+                return
+            }
+        
+            self.cache.setObject(image, forKey: cachedKey)
+            
+            DispatchQueue.main.async {
+                completed(image)
+            }
+            
+        }
+        
+        task.resume()
+        
+    }
+    
 }
